@@ -1,98 +1,88 @@
 # KNN-Iris-Classification-Visualization
-🌸 KNN Iris Classification & Visualization
-A simple machine learning project that uses the K‑Nearest Neighbors (KNN) algorithm to classify species in the Iris dataset and visualize performance metrics including accuracy and decision boundaries.
+# 🌸 KNN Iris Classification & Visualization
 
-📂 Project Structure
+A simple machine learning project using the **K‑Nearest Neighbors (KNN)** algorithm to classify species in the classic **Iris dataset**. This project evaluates model accuracy, visualizes confusion matrices, and plots decision boundaries for better understanding.
 
-bash
+---
 
-Copy
-
-Edit
-
+## 📂 Project Structure
 KNN-Iris-Classification-Visualization/
 
-├── 
-iris.csv                  # Iris dataset (downloaded from Kaggle or UCI)
+
+├── iris.csv # Iris dataset (downloaded from Kaggle or UCI)
 
 
-├──
-knn_iris.py               # Python script with the full code
+├── knn_iris.py # Python script with the full KNN implementation
 
 
-├──
-knn_iris.ipynb            # Jupyter Notebook version
+├── knn_iris.ipynb # Jupyter Notebook version (optional)
 
 
-├──
-README.md                 # This file
+├── README.md # Project overview and instructions
 
 
-└── 
-outputs/
-    
-    
-    ├── accuracy_plot.png    # Accuracy vs K values
-    
-    
-    └── decision_boundary.png # Decision boundary visualization
+└── outputs/
 
 
-    
-🔍 About the Dataset
-Dataset: Iris Dataset on Kaggle
-https://www.kaggle.com/datasets/uciml/iris
-Alternative: UCI Iris Dataset
+├── accuracy_plot.png # Accuracy vs K values graph
 
-Classes: Setosa, Versicolor, Virginica
 
-Features:
+└── decision_boundary.png # Decision boundary visualization (2D)
 
-Sepal Length (cm)
 
-Sepal Width (cm)
+---
 
-Petal Length (cm)
+## 🔍 About the Dataset
 
-Petal Width (cm)
+- **Dataset Source**: [Kaggle – Iris Dataset](https://www.kaggle.com/datasets/uciml/iris)
+- **Original Source**: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/iris)
+- **Classes**:
+  - Iris-setosa
+  - Iris-versicolor
+  - Iris-virginica
+- **Features**:
+  - Sepal Length (cm)
+  - Sepal Width (cm)
+  - Petal Length (cm)
+  - Petal Width (cm)
 
-📊 What This Project Does
-Loads and preprocesses the Iris dataset (from CSV)
+---
 
-Encodes class labels using LabelEncoder
+## 📊 What This Project Does
 
-Normalizes the features using StandardScaler
+- Loads the dataset from CSV (Kaggle)
+- Encodes class labels using `LabelEncoder`
+- Normalizes feature values using `StandardScaler`
+- Splits data into training and testing sets
+- Trains a `KNeighborsClassifier` with multiple values of **K (1–10)**
+- Evaluates performance using:
+  - **Accuracy**
+  - **Confusion Matrix**
+- Plots:
+  - **Accuracy vs K graph**
+  - **Decision boundaries** using 2D feature space (Petal Length & Width)
 
-Trains KNN classifier with different K values (1 to 10)
+---
 
-Evaluates using:
+## 🚀 Getting Started
 
-Accuracy
+### ✅ Prerequisites
 
-Confusion Matrix
+Make sure Python and the following libraries are installed:
 
-Visualizes:
-
-Accuracy vs. K plot
-
-Decision boundaries (2D, Petal Length & Width)
-
-🚀 Getting Started
-✅ Requirements
-Install the dependencies:
-
-bash
-Copy
-Edit
+```bash
 pip install pandas numpy matplotlib scikit-learn
-▶️ Running the Script
-bash
-Copy
-Edit
+
 python knn_iris.py
-📓 Or Run the Notebook
-Use Jupyter or Google Colab to open and run knn_iris.ipynb.
 
-📈 Visualizations
-Accuracy Plot: Shows classification accuracy across different K values
+📓 Or Use the Jupyter Notebook
+Open and run the knn_iris.ipynb notebook using Jupyter or Google Colab.
 
+
+-----
+📈 Visual Outputs
+📌 Accuracy Plot
+Shows model accuracy as K increases (from K=1 to K=10). Helps determine the best K value for classification.
+
+📌 Decision Boundary
+Visualizes how KNN separates classes based on two selected features (Petal Length & Petal Width). Useful for understanding model behavior.

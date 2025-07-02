@@ -3,16 +3,38 @@
 A simple machine learning project that uses the K‑Nearest Neighbors (KNN) algorithm to classify species in the Iris dataset and visualize performance metrics including accuracy and decision boundaries.
 
 📂 Project Structure
+
 bash
+
 Copy
+
 Edit
+
 KNN-Iris-Classification-Visualization/
-├── iris.csv                  # Iris dataset (downloaded from Kaggle or UCI)
-├── knn_iris.py               # Python script with the full code
-├── knn_iris.ipynb            # Jupyter Notebook version
-├── README.md                 # This file
-└── outputs/
-    ├── accuracy_plot.png     # Accuracy vs K values
+
+├── 
+iris.csv                  # Iris dataset (downloaded from Kaggle or UCI)
+
+
+├──
+knn_iris.py               # Python script with the full code
+
+
+├──
+knn_iris.ipynb            # Jupyter Notebook version
+
+
+├──
+README.md                 # This file
+
+
+└── 
+outputs/
+    
+    
+    ├── accuracy_plot.png    # Accuracy vs K values
+    
+    
     └── decision_boundary.png # Decision boundary visualization
 
 

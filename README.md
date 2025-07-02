@@ -14,6 +14,9 @@ KNN-Iris-Classification-Visualization/
 └── outputs/
     ├── accuracy_plot.png     # Accuracy vs K values
     └── decision_boundary.png # Decision boundary visualization
+
+
+    
 🔍 About the Dataset
 Dataset: Iris Dataset on Kaggle
 https://www.kaggle.com/datasets/uciml/iris
